@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Web Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: white;
+      line-height: 1.6;
+    }
+    a { color: #fff; text-decoration: none; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #111;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+      background: #000;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+    .highlight {
+      color: #f72b75;
+    }
+    .section {
+      padding: 60px 10%;
+    }
+    .services, .portfolio {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 250px;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: white;
+    }
+    button {
+      padding: 10px;
+      border: none;
+      background: #f72b75;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Sohag.</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p>Full Stack Software Developer</p>
+      <h1>Hi, I'm <span class="highlight">Muhammad Awais</span><br>From Pakistan.</h1>
+    </div>
+    <div class="hero-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRceRRSDA72q8wDNaTt7nHJHqtltW1adOAA&s" alt="Sohag" style="border-radius: 10px; max-width: 300px;">
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teaching, Frontend Development, PHP & MySQL.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>My Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Modern, responsive, and user-friendly web designs.</p>
+      </div>
+      <div class="card" style="background: #f72b75;">
+        <h3>UI/UX Design</h3>
+        <p>Crafting intuitive interfaces with a focus on usability.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive Design</h3>
+        <p>Ensuring websites look great on all devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio">
+      <div class="card"><img src="images/Ecommerce-Full-UI-Kit-PSD.jpg" style="width: 100%; border-radius: 10px;"></div>
+      <div class="card"><img src="images/multi restaurant food order website.png" style="width: 100%; border-radius: 10px;"></div>
+      <div class="card"><img src="images/2466836e-83e0-4fe0-851f-daf2282f3220-cover.jpg" style="width: 100%; border-radius: 10px;"></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button>Submit</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; Sohag. Made with ❤️ by Sohag Hosen</p>
+  </footer>
+</body>
+</html>
